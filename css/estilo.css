@@ -95,6 +95,14 @@ header {
     right: 10px;
 }
 
+.imagenProducto {
+    transition: height 0.5s, width 0.5s;
+}
+.imagenProducto:hover {
+    height: 300px;
+    width: 300px;
+}
+
 
 footer {
     background-color:rgb(252, 112, 252);
@@ -165,7 +173,7 @@ header {
 }
 
 .padreFlex {
-    background-color: bisque;
+    background: linear-gradient(to right, #e96443, #904e95);
     border: 3px black solid;
      border-radius: 4px;
      height: 900px;
@@ -184,4 +192,29 @@ header {
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    }
+
+    @keyframes animacion {
+        0% {
+            width: 220px;
+        }
+        25% {
+            width: 240px;
+        }
+        50% {
+            width: 260px;
+        }
+        75% {
+ width: 280px;
+        }
+        100% {
+            width: 300px;
+        }
+    }
+.hijoFlex {
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
 }
