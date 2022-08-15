@@ -95,6 +95,7 @@ header {
     right: 10px;
 }
 
+
 footer {
     background-color:rgb(252, 112, 252);
     width: 100%;
@@ -164,7 +165,7 @@ header {
 }
 
 .padreFlex {
-    background-color:  #ffdde1;
+    background-color: bisque;
     border: 3px black solid;
      border-radius: 4px;
      height: 900px;
